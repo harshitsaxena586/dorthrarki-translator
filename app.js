@@ -1,8 +1,12 @@
-var buttonOne = document.querySelector('#clickme')
+var buttonOne = document.getElementById('clickme')
 
-buttonOne.addEventListner("click",function (){
+buttonOne.addEventListener("click",function clickTracker()
+
+{
     console.log('clicked')
 })
 
 
-prompt("what is uor name")
+
+
+
