@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+
+
+body{
+  
+    background-image:url("images/background.svg") ;
+    max-width: 600px;
+     /*margin: auto;*/
+    width: auto; 
+}
+
+/* .inputarea{
+    resize: none;
+    margin: 2rem;
+    margin-top: 5rem;
+    padding: 0.8rem;
+    width: 20%;
+    border: orangered;
+    height: 20%;
+    -webkit-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75)
+    border-radius: 27px 27px 27px 27px;
+    -moz-border-radius: 27px 27px 27px 27px;
+    -webkit-border-radius: 27px 27px 27px 27px;
+    border: 0px solid #000000;
+    } */
+
+.btn{
+    margin: 5rem;
+    block-size: 20%;
+    width: 50%;
+    width: auto;
+    width: 150px;
+  height: 150px;
+  background-color: #fff;
+
+  box-shadow: 5px #0ff;
+}
+h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #F9C937,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #001427;
+    text-shadow: 0 0 0.6rem #001427, 0 0 1.5rem #F9C937,
+      -0.2rem 0.1rem 1rem #F9C937, 0.2rem 0.1rem 1rem #F9C937,
+      0 -0.5rem 2rem #F9C937, 0 0.5rem 3rem #F9C937;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #001427;
+      text-shadow: 0 0 0.6rem #001427, 0 0 1.5rem #F9C937,
+        -0.2rem 0.1rem 1rem #F9C937, 0.2rem 0.1rem 1rem #F9C937,
+        0 -0.5rem 2rem #F9C937, 0 0.5rem 3rem #F9C937;
+    }
+    28%,
+    33% {
+      color: #F9C937;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #F9C937;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #F9C937;
+      text-shadow: none;
+    }
+    100% {
+      color: #001427;
+      text-shadow: 0 0 0.6rem #001427, 0 0 1.5rem #F9C937,
+        -0.2rem 0.1rem 1rem #F9C937, 0.2rem 0.1rem 1rem #F9C937,
+        0 -0.5rem 2rem #F9C937, 0 0.5rem 3rem #F9C937;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+.intructruction{
+    color: wheat;
+}
+      
+.show{
+    margin: 2rem; 
+    padding: 1rem;
+    width: 50%;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75
+     
+    border:5px blue;
+}
