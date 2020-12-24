@@ -7,12 +7,12 @@ function likgenerator(text){
     return url+"?"+ "text="+ text;
 
 }
-var temp =""
+
 function clickHandler(){
     var userInput=input.value
     fetch(likgenerator(userInput))
      .then(response=> response.json())
-     .then(json=>  temp=json.contents.translated)
+     .then(json=>  temp =json.contents.translated)
             output.innerHTML= temp
      
 }
