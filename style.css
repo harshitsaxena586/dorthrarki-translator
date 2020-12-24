@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 
-_
+
 
 body{
   
     
     max-width: 600px;
     background-size: cover;
-    background-image: url("/images/got-background.jpg")
-     margin: auto;
+    background-repeat: no-repeat;
+    background-image: url("Got.jpg");
+    margin: auto;
     
 }
 
@@ -72,3 +73,20 @@ body{
 }
 
 /* button */
+.show{
+  resize: none;
+  margin: 1rem;
+  margin-top: 3rem;
+  padding: 0.8rem;
+  max-height: 1rem;;
+  border: orangered;
+  width: 50%;
+  -webkit-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75)
+  border-radius: 27px 27px 27px 27px;
+  -moz-border-radius: 27px 27px 27px 27px;
+  -webkit-border-radius: 27px 27px 27px 27px;
+  border: 0px solid #000000;
+
+}
