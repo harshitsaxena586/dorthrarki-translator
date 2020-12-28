@@ -8,12 +8,17 @@ function likgenerator(text){
 
 }
 
+function errorHandler(error){
+    console.log("error occured"+error)
+    alert("something went wromg with our servers ,please try again later ")
+}
 function clickHandler(){
     var userInput=input.value
     fetch(likgenerator(userInput))
      .then(response=> response.json())
      .then(json=>  temp =json.contents.translated)
             output.innerHTML= temp
+    .catch(errorHandler)
      
 }
 
